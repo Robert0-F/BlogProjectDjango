@@ -30,7 +30,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # Конфигурация сервера электронной почты
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'robrttagirov@gmail.com'
-EMAIL_HOST_PASSWORD = 'xxxxxxxxxxxxxxxx'
+EMAIL_HOST_PASSWORD = ENV_EMAIL_HOST_PASSWORD
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
