@@ -62,7 +62,9 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     'accounts.apps.AccountsConfig',
     'social_django',
-    'django_bootstrap5'
+    'django_bootstrap5',
+    'rest_framework',
+    'blog_api.apps.BlogApiConfig',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +76,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.AllowAny",
+    ],
+}
 
 ROOT_URLCONF = 'BlogProjectDjango.urls'
 
